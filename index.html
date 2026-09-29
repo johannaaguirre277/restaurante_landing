@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>rockburger</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+  <h1>Rockburger</h1>
+  <nav>
+    <a href="#menu">Menú</a>
+    <a href="#producto-destacado">Más Vendido</a>
+    <a href="#resenas">Reseñas</a>
+    <a href="#reserva">Reserva</a>
+  </nav>
+</header>
+
+<main>
+  <!-- SECCIÓN 1: MENÚ PRINCIPAL -->
+  <!-- SECCIÓN 1: MENÚ PRINCIPAL -->
+<section id="menu">
+  <h2>Nuestro Menú</h2>
+
+  <!-- 1. Botones para filtrar -->
+  <div class="filtros-menu" style="display: flex; gap: 1rem; justify-content: center; margin-bottom: 2rem;">
+    <button type="button" class="btn-filtro" data-categoria="todos">Todos</button>
+    <button type="button" class="btn-filtro" data-categoria="hamburguesas">Hamburguesas</button>
+    <button type="button" class="btn-filtro" data-categoria="bebidas">Bebidas</button>
+  </div>
+
+  <!-- 2. Agrega data-categoria a cada tarjeta -->
+  <article id="ac-dc" class="dish-card" data-categoria="hamburguesas">
+    <h3>Hamburguesa AC/DC</h3>
+    <p>Carne, tocineta, cebolla, queso mozzarella, ripio de papitas.</p>
+    <p class="price">12.000 COP</p>
+  </article>
+
+  <article id="accept" class="dish-card" data-categoria="hamburguesas">
+    <h3>Hamburguesa Accept</h3>
+    <p>Doble carne, ensalada, tocino, queso mozzarella.</p>
+    <p class="price">10.000 COP</p>
+  </article>
+
+  <!-- Si agregas bebidas más adelante, ponles data-categoria="bebidas" -->
+</section>
+
+    <article id="judas" class="dish-card">
+      <h3>Hamburguesa Judas Priest</h3>
+      <p>Pollo, ensalada, tocineta, ripio de papitas.</p>
+      <p class="price">10.000 COP</p>
+    </article>
+
+    <article id="megadeth" class="dish-card">
+      <h3>Hamburguesa Megadeth</h3>
+      <p>Pollo, carne, ensalada, ripio de papa, queso mozzarella, tocineta.</p>
+      <p class="price">16.000 COP</p>
+    </article>
+  </section>
+
+  <!-- SECCIÓN 2: PRODUCTO MÁS VENDIDO (HERO) -->
+  <section id="producto-destacado">
+    <h2>Producto más vendido</h2>
+    <article class="dish-card featured">
+      <h3>System of a Down</h3>
+      <p>Pollo, doble carne, doble tocino, ensalada, ripio de papitas.</p>
+      <p class="price">30.000 COP</p>
+      <button type="button">Pedir ahora</button>
+    </article>
+  </section>
+
+  <!-- SECCIÓN 3: RESEÑAS DE CLIENTES -->
+  <section id="reseva">
+    <h2>Reseñas de Clientes</h2>
+    <article class="review-card">
+      <p class="stars">★★★★★</p>
+      <blockquote>"La hamburguesa System of a Down es gigantesca y deliciosa. ¡100% recomendados!"</blockquote>
+      <p class="author">- Carlos M.</p>
+    </article>
+  </section>
+
+  <!-- SECCIÓN 4: FORMULARIO DE RESERVA -->
+  <section id="reserva">
+    <h2>Haz tu Reserva</h2>
+    <form action="#" method="POST">
+      <div class="form-group">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required placeholder="Ej. Juan Pérez">
+      </div>
+
+      <div class="form-group">
+        <label for="telefono">Teléfono de contacto:</label>
+        <input type="tel" id="telefono" name="telefono" required placeholder="Ej. 3001234567">
+      </div>
+
+      <div class="form-group">
+        <label for="fecha">Fecha y Hora:</label>
+        <input type="datetime-local" id="fecha" name="fecha" required>
+      </div>
+
+      <div class="form-group">
+        <label for="comentarios">Comentarios o peticiones especiales:</label>
+        <textarea id="comentarios" name="comentarios" rows="3" placeholder="Ej. Mesa cerca a la ventana"></textarea>
+      </div>
+
+      <button type="submit">Confirmar Reserva</button>
+    </form>
+  </section>
+</main>
+
+<!-- SECCIÓN 5: PIE DE PÁGINA -->
+<footer>
+  <address>
+    <p>📍 Dirección: Calle Rock #45 - 12, Ciudad Metal</p>
+    <p>📞 Teléfono: (601) 555-7890</p>
+    <p>⏰ Horario: Lunes a Domingo - 12:00 PM a 11:00 PM</p>
+  </address>
+  <p>&copy; 2026 Rockburger. Todos los derechos reservados.</p>
+</footer>
+  <script src="main.js" defer></script>
+</body>
+</html>
